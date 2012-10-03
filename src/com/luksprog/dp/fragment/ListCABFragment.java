@@ -27,6 +27,8 @@ public class ListCABFragment extends ListFragment {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 		if (POST_HONEYCOMB) {
+			// make sure we are on a version above Honeycomb otherwise will
+			// access things that aren't available
 			postHoneycombCAB();
 		} else {
 			// probably do nothing and implement the normal context menu?!?
@@ -94,10 +96,7 @@ public class ListCABFragment extends ListFragment {
 					nr--;
 				}
 				mode.setTitle(nr + " rows selected!");
-
 			}
-
 		});
-
 	}
 }

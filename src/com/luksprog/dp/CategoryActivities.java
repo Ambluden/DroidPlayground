@@ -15,16 +15,16 @@ import android.widget.ListView;
 public class CategoryActivities extends ListActivity {
 
 	private static final String[] CHALLENGE_INTENTS = {
-			"com.luksprog.intent.ANIMATION_INTENT",
-			"com.luksprog.intent.SERVICE_INTENT",
-			"com.luksprog.intent.RESOURCE_INTENT",
-			"com.luksprog.intent.FRAG_INTENT",
-			"com.luksprog.intent.MISC_INTENT",
-			"com.luksprog.intent.ADAPTER_INTENT",
-			"com.luksprog.intent.THREAD_INTENT",
-			"com.luksprog.intent.APP_INTENT",
-			"com.luksprog.intent.VIEW_INTENT",
-			"com.luksprog.intent.PROVIDER_INTENT" };
+			"com.luksprog.dp.intent.ANIMATION_INTENT",
+			"com.luksprog.dp.intent.SERVICE_INTENT",
+			"com.luksprog.dp.intent.RESOURCE_INTENT",
+			"com.luksprog.dp.intent.FRAG_INTENT",
+			"com.luksprog.dp.intent.MISC_INTENT",
+			"com.luksprog.dp.intent.ADAPTER_INTENT",
+			"com.luksprog.dp.intent.THREAD_INTENT",
+			"com.luksprog.dp.intent.APP_INTENT",
+			"com.luksprog.dp.intent.VIEW_INTENT",
+			"com.luksprog.dp.intent.PROVIDER_INTENT" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

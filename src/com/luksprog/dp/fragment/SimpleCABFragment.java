@@ -64,12 +64,10 @@ public class SimpleCABFragment extends Fragment implements Callback {
 
 	@Override
 	public void onDestroyActionMode(ActionMode mode) {
-
 	}
 
 	@Override
 	public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
 		return false;
 	}
-
 }

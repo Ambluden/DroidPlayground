@@ -20,9 +20,14 @@
         </activity>
         <activity android:name=".CategoryActivities" />
         <!-- NORMAL ACTIVITIES -->
-         <activity android:name=".fragment.CABWithFragments" >
+        <activity android:name=".adapter.ExpandingElementList" >
             <intent-filter>
-                <action android:name="com.luksprog.intent.FRAG_INTENT" />
+                <action android:name="com.luksprog.dp.intent.ADAPTER_INTENT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".fragment.CABWithFragments" >
+            <intent-filter>
+                <action android:name="com.luksprog.dp.intent.FRAG_INTENT" />
             </intent-filter>
         </activity>
     </application>
