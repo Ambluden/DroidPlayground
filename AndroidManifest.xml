@@ -25,6 +25,11 @@
                 <action android:name="com.luksprog.dp.intent.ADAPTER_INTENT" />
             </intent-filter>
         </activity>
+        <activity android:name=".fragment.NestingDialogFragmentsSample" >
+            <intent-filter>
+                <action android:name="com.luksprog.dp.intent.FRAG_INTENT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".fragment.CABWithFragments" >
             <intent-filter>
                 <action android:name="com.luksprog.dp.intent.FRAG_INTENT" />
