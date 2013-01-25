@@ -1,10 +1,10 @@
 ## DroidPlayground
 
     Some Android related stuff, basically any snippet of code that doesn't make 
-    sense in a standalone project. Most of the code is related to the answer I 
-    give on stackoverflow.com .
+    sense in a standalone project. Most of the code is related to the answers I 
+    give on stackoverflow.com.
  
- ## License    
+## License    
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
