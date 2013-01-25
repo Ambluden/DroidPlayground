@@ -1,7 +1,8 @@
 ## DroidPlayground
 
-    Some Android related stuff, basically any snippet of code that doesn't make sense in a standalone project. Most of the code is related to the answer I give on 
- stackoverflow.com .
+    Some Android related stuff, basically any snippet of code that doesn't make 
+    sense in a standalone project. Most of the code is related to the answer I 
+    give on stackoverflow.com .
  
  ## License    
 
