@@ -22,9 +22,9 @@ import android.widget.ListView;
 
 public class MainCategories extends ListActivity {
 
-	private static final String[] CATEGORIES = { "ANIMATIONS", "SERVICES",
-			"RESOURCES", "FRAGMENTS", "MISCELANOUS", "ADAPTERS", "THREADS",
-			"APP", "VIEWS", "PROVIDERS" };
+	private static final String[] CATEGORIES = { "VIEWS", "FRAGMENTS",
+			"ANIMATIONS", "SERVICES", "RESOURCES", "MISCELANOUS", "ADAPTERS",
+			"THREADS", "APP", "PROVIDERS" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

@@ -28,15 +28,15 @@ import android.widget.ListView;
 public class CategoryActivities extends ListActivity {
 
 	private static final String[] CHALLENGE_INTENTS = {
+			"com.luksprog.dp.intent.VIEW_INTENT",
+			"com.luksprog.dp.intent.FRAG_INTENT",
 			"com.luksprog.dp.intent.ANIMATION_INTENT",
 			"com.luksprog.dp.intent.SERVICE_INTENT",
 			"com.luksprog.dp.intent.RESOURCE_INTENT",
-			"com.luksprog.dp.intent.FRAG_INTENT",
 			"com.luksprog.dp.intent.MISC_INTENT",
 			"com.luksprog.dp.intent.ADAPTER_INTENT",
 			"com.luksprog.dp.intent.THREAD_INTENT",
 			"com.luksprog.dp.intent.APP_INTENT",
-			"com.luksprog.dp.intent.VIEW_INTENT",
 			"com.luksprog.dp.intent.PROVIDER_INTENT" };
 
 	@Override
@@ -44,7 +44,7 @@ public class CategoryActivities extends ListActivity {
 		super.onCreate(savedInstanceState);
 		int sentPosition = getIntent().getIntExtra("the_position", -1);
 		if (sentPosition == -1) {
-			return; // show nothing, what happened
+			return; // show nothing, what happened?!
 		}
 		PackageManager pm = getPackageManager();
 		Intent challengeIntent = new Intent();
@@ -63,7 +63,7 @@ public class CategoryActivities extends ListActivity {
 			dObj.activityIntent = i;
 			adapter.add(dObj);
 		}
-		setListAdapter(adapter);		
+		setListAdapter(adapter);
 	}
 
 	@Override
