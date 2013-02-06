@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.luksprog.dp.view.DragAwareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dragLayer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <View
+        android:id="@+id/target2"
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="60dp"
+        android:background="#99cc00" />
+
+    <View
+        android:id="@+id/target1"
+        android:layout_width="20px"
+        android:layout_height="20px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/target2"
+        android:layout_marginLeft="60dp"
+        android:background="#0077cc" />
+
+    <Button
+        android:id="@+id/dragMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:text="Drag Me!" />
+
+</com.luksprog.dp.view.DragAwareRelativeLayout>
