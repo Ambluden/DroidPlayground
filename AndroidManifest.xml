@@ -20,12 +20,17 @@
         </activity>
         <activity android:name=".CategoryActivities" />
         <!-- NORMAL ACTIVITIES -->
-          <activity android:name=".view.DragEnhancement" >
+        <activity android:name=".view.ViewPagerAdapt" >
+            <intent-filter>
+                <action android:name="com.luksprog.dp.intent.VIEW_INTENT" />
+            </intent-filter>
+        </activity>       
+        <activity android:name=".view.DragEnhancement" >
             <intent-filter>
                 <action android:name="com.luksprog.dp.intent.VIEW_INTENT" />
             </intent-filter>
         </activity>
-         <activity android:name=".view.DragDisplacement" >
+        <activity android:name=".view.DragDisplacement" >
             <intent-filter>
                 <action android:name="com.luksprog.dp.intent.VIEW_INTENT" />
             </intent-filter>
