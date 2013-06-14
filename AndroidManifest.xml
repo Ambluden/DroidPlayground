@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.luksprog.dp"
+    package="com.luksprog.playground"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -11,53 +11,53 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity android:name=".MainCategories" >
+        <activity android:name="com.luksprog.playground.MainCategories" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CategoryActivities" />
+        <activity android:name="com.luksprog.playground.CategoryActivities" />
         <!-- NORMAL ACTIVITIES -->
         <activity android:name=".adapter.ListWithTabs" >
             <intent-filter>
-                <action android:name="com.luksprog.dp.intent.ADAPTER_INTENT" />
+                <action android:name="com.luksprog.playground.ADAPTER" />
             </intent-filter>
-        </activity>     
+        </activity>
         <activity android:name=".view.ViewPagerAdapt" >
             <intent-filter>
-                <action android:name="com.luksprog.dp.intent.VIEW_INTENT" />
+                <action android:name="com.luksprog.playground.VIEW" />
             </intent-filter>
-        </activity>       
+        </activity>
         <activity android:name=".view.DragEnhancement" >
             <intent-filter>
-                <action android:name="com.luksprog.dp.intent.VIEW_INTENT" />
+                <action android:name="com.luksprog.playground.VIEW" />
             </intent-filter>
         </activity>
         <activity android:name=".view.DragDisplacement" >
             <intent-filter>
-                <action android:name="com.luksprog.dp.intent.VIEW_INTENT" />
+                <action android:name="com.luksprog.playground.VIEW" />
             </intent-filter>
         </activity>
         <activity android:name=".fragment.ExtraInputPager" >
             <intent-filter>
-                <action android:name="com.luksprog.dp.intent.FRAG_INTENT" />
+                <action android:name="com.luksprog.playground.FRAGMENT" />
             </intent-filter>
         </activity>
         <activity android:name=".adapter.ExpandingElementList" >
             <intent-filter>
-                <action android:name="com.luksprog.dp.intent.ADAPTER_INTENT" />
+                <action android:name="com.luksprog.playground.ADAPTER" />
             </intent-filter>
         </activity>
         <activity android:name=".fragment.NestingDialogFragmentsSample" >
             <intent-filter>
-                <action android:name="com.luksprog.dp.intent.FRAG_INTENT" />
+                <action android:name="com.luksprog.playground.FRAGMENT" />
             </intent-filter>
         </activity>
         <activity android:name=".fragment.CABWithFragments" >
             <intent-filter>
-                <action android:name="com.luksprog.dp.intent.FRAG_INTENT" />
+                <action android:name="com.luksprog.playground.FRAGMENT" />
             </intent-filter>
         </activity>
     </application>

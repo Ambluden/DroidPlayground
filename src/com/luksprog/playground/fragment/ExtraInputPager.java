@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.luksprog.dp.fragment;
+package com.luksprog.playground.fragment;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -29,7 +29,7 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.luksprog.dp.R;
+import com.luksprog.playground.R;
 
 /**
  * A simple sample for having nested fragments in a fragment placed in a

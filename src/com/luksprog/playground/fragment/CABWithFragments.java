@@ -11,12 +11,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.luksprog.dp.fragment;
+package com.luksprog.playground.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
-import com.luksprog.dp.R;
+import com.luksprog.playground.R;
 
 public class CABWithFragments extends FragmentActivity {
 

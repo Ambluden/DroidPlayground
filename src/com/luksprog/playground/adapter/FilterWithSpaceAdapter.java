@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.luksprog.dp.adapter;
+package com.luksprog.playground.adapter;
 
 import java.util.ArrayList;
 import java.util.Arrays;

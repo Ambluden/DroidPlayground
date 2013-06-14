@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.luksprog.dp;
+package com.luksprog.playground;
 
 import java.util.List;
 
@@ -28,16 +28,8 @@ import android.widget.ListView;
 public class CategoryActivities extends ListActivity {
 
 	private static final String[] CHALLENGE_INTENTS = {
-			"com.luksprog.dp.intent.VIEW_INTENT",
-			"com.luksprog.dp.intent.FRAG_INTENT",
-			"com.luksprog.dp.intent.ANIMATION_INTENT",
-			"com.luksprog.dp.intent.SERVICE_INTENT",
-			"com.luksprog.dp.intent.RESOURCE_INTENT",
-			"com.luksprog.dp.intent.MISC_INTENT",
-			"com.luksprog.dp.intent.ADAPTER_INTENT",
-			"com.luksprog.dp.intent.THREAD_INTENT",
-			"com.luksprog.dp.intent.APP_INTENT",
-			"com.luksprog.dp.intent.PROVIDER_INTENT" };
+			"com.luksprog.playground.VIEW", "com.luksprog.playground.FRAGMENT",
+			"com.luksprog.playground.ADAPTER", };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

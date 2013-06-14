@@ -9,13 +9,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        class="com.luksprog.dp.fragments.ListCABFragment" />
+        class="com.luksprog.playground.fragment.ListCABFragment" />
 
     <fragment
         android:id="@+id/cabsimple"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        class="com.luksprog.dp.fragments.SimpleCABFragment" />
+        class="com.luksprog.playground.fragment.SimpleCABFragment" />
 
 </LinearLayout>

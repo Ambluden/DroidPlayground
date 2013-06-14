@@ -11,26 +11,43 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.luksprog.dp;
+package com.luksprog.playground;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
 public class MainCategories extends ListActivity {
 
-	private static final String[] CATEGORIES = { "VIEWS", "FRAGMENTS",
-			"ANIMATIONS", "SERVICES", "RESOURCES", "MISCELANOUS", "ADAPTERS",
-			"THREADS", "APP", "PROVIDERS" };
+	private static final String[] CATEGORIES = { "Views:", "Fragments",
+			"Adapters:" };
+	private static final String[] CATEGORIES_DESCRIPTIONS = {
+			"View related code, custom components,"
+					+ " view creation/changes, special usess",
+			"Fragment use samples",
+			"Sample code related to building, changing and special usess of adapters" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setListAdapter(new ArrayAdapter<String>(this,
-				android.R.layout.simple_list_item_1, CATEGORIES));
+		List<HashMap<String, String>> data = new ArrayList<HashMap<String, String>>();
+		for (int i = 0; i < CATEGORIES.length; i++) {
+			HashMap<String, String> map = new HashMap<String, String>();
+			map.put("cat", CATEGORIES[i]);
+			map.put("cat_desc", CATEGORIES_DESCRIPTIONS[i]);
+			data.add(map);
+		}
+		setListAdapter(new SimpleAdapter(this, data,
+				android.R.layout.simple_list_item_2, new String[] { "cat",
+						"cat_desc" }, new int[] { android.R.id.text1,
+						android.R.id.text2 }));
 	}
 
 	protected void onListItemClick(ListView l, View v, int position, long id) {

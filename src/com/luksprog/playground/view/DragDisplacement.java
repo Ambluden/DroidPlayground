@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.luksprog.dp.view;
+package com.luksprog.playground.view;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -23,9 +23,9 @@ import android.view.View;
 import android.view.View.OnLongClickListener;
 import android.widget.Toast;
 
-import com.luksprog.dp.R;
-import com.luksprog.dp.view.DragAwareRelativeLayout.DragEventsListener;
-import com.luksprog.dp.view.DragAwareRelativeLayout.DragShadowBuilderExtension;
+import com.luksprog.playground.R;
+import com.luksprog.playground.view.DragAwareRelativeLayout.DragEventsListener;
+import com.luksprog.playground.view.DragAwareRelativeLayout.DragShadowBuilderExtension;
 
 @SuppressLint("NewApi")
 public class DragDisplacement extends Activity {

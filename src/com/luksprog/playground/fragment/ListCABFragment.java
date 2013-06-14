@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.luksprog.dp.fragment;
+package com.luksprog.playground.fragment;
 
 import android.annotation.SuppressLint;
 import android.os.Build;
@@ -28,7 +28,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.luksprog.dp.R;
+import com.luksprog.playground.R;
 
 public class ListCABFragment extends ListFragment {
 

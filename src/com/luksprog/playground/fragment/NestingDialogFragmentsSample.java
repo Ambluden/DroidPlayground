@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.luksprog.dp.fragment;
+package com.luksprog.playground.fragment;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

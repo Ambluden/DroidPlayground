@@ -11,7 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.luksprog.dp.view;
+package com.luksprog.playground.view;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -33,7 +33,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
-import com.luksprog.dp.R;
+import com.luksprog.playground.R;
 
 @SuppressLint("NewApi")
 public class DragEnhancement extends Activity {
