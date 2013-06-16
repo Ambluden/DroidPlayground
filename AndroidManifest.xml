@@ -20,6 +20,11 @@
         </activity>
         <activity android:name="com.luksprog.playground.CategoryActivities" />
         <!-- NORMAL ACTIVITIES -->
+         <activity android:name=".adapter.ChangingRowLayout" >
+            <intent-filter>
+                <action android:name="com.luksprog.playground.ADAPTER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".adapter.ListWithTabs" >
             <intent-filter>
                 <action android:name="com.luksprog.playground.ADAPTER" />
