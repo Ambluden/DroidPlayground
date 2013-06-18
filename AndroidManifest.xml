@@ -20,7 +20,15 @@
         </activity>
         <activity android:name="com.luksprog.playground.CategoryActivities" />
         <!-- NORMAL ACTIVITIES -->
-         <activity android:name=".adapter.ChangingRowLayout" >
+        <activity
+            android:name=".fragment.TabbedDialogActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/TabbedDialogTheme" >
+            <intent-filter>
+                <action android:name="com.luksprog.playground.FRAGMENT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".adapter.ChangingRowLayout" >
             <intent-filter>
                 <action android:name="com.luksprog.playground.ADAPTER" />
             </intent-filter>
