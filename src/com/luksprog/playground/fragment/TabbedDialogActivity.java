@@ -24,6 +24,7 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.FrameLayout;
 import android.widget.TabHost;
 import android.widget.TabHost.TabContentFactory;
@@ -31,6 +32,14 @@ import android.widget.TextView;
 
 import com.luksprog.playground.R;
 
+/**
+ * @see http
+ *      ://stackoverflow.com/questions/16806716/tabbed-dialog-with-fragments-
+ *      in-widget
+ * 
+ * @author Luksprog
+ * 
+ */
 public class TabbedDialogActivity extends FragmentActivity implements
 		ViewPager.OnPageChangeListener, TabHost.OnTabChangeListener,
 		TabContentFactory {
@@ -43,16 +52,15 @@ public class TabbedDialogActivity extends FragmentActivity implements
 	@Override
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.frag_tabbeddialogactivity);
 		mViewPager = (ViewPager) findViewById(R.id.pager);
+		// TabHost initialization
 		mTabHost = (TabHost) findViewById(android.R.id.tabhost);
 		mTabHost.setup();
 		for (int i = 0; i < NUMBER_OF_PAGES; i++) {
-			mTabHost.addTab(mTabHost
-					.newTabSpec("tab" + i)
-					.setContent(this)
-					.setIndicator("Tab no." + i,
-							getResources().getDrawable(R.drawable.ic_launcher)));
+			mTabHost.addTab(mTabHost.newTabSpec("tab" + i).setContent(this)
+					.setIndicator("Tab no." + i));
 		}
 		mTabHost.setOnTabChangedListener(this);
 		mTabHost.setCurrentTab(0);
