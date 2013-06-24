@@ -19,6 +19,11 @@
         </activity>
         <activity android:name="com.luksprog.playground.CategoryActivities" />
         <!-- NORMAL ACTIVITIES -->
+        <activity android:name=".view.RollingCredits" >
+            <intent-filter>
+                <action android:name="com.luksprog.playground.VIEW" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".fragment.TabbedDialogActivity"
             android:launchMode="singleInstance"

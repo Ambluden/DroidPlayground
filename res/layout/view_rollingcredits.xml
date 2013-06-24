@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:id="@+id/creditstable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <TextView
+                    android:text="Lorem Ipsum este pur şi simplu\n o machetă pentru text\n a industriei tipografice.\n Lorem Ipsum a fost macheta\n standard a industriei \nîncă din secolul al \nXVI-lea, când un tipograf anonim\n a luat o planşetă de\n litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective.\n Nu doar că a supravieţuit timp de cinci secole,\n dar şi a facut saltul în tipografia electronică\n practic neschimbată. A fost popularizată\n în anii &apos;60 odată cu ieşirea colilor Letraset care\n conţineau pasaje Lorem Ipsum,\n iar mai recent, prin programele de publicare pentru\n calculator, ca Aldus PageMaker care includeau versiuni de Lorem Ipsum."
+                    android:textColor="#99cc00"
+                    android:textSize="28sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <TextView
+                    android:text="Lorem Ipsum este pur şi simplu\n o machetă pentru text\n a industriei tipografice.\n Lorem Ipsum a fost macheta\n standard a industriei \nîncă din secolul al \nXVI-lea, când un tipograf anonim\n a luat o planşetă de\n litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective.\n Nu doar că a supravieţuit timp de cinci secole,\n dar şi a facut saltul în tipografia electronică\n practic neschimbată. A fost popularizată\n în anii &apos;60 odată cu ieşirea colilor Letraset care\n conţineau pasaje Lorem Ipsum,\n iar mai recent, prin programele de publicare pentru\n calculator, ca Aldus PageMaker care includeau versiuni de Lorem Ipsum."
+                    android:textColor="#cc0077"
+                    android:textSize="28sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <TextView
+                    android:text="Lorem Ipsum este pur şi simplu\n o machetă pentru text\n a industriei tipografice.\n Lorem Ipsum a fost macheta\n standard a industriei \nîncă din secolul al \nXVI-lea, când un tipograf anonim\n a luat o planşetă de\n litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective.\n Nu doar că a supravieţuit timp de cinci secole,\n dar şi a facut saltul în tipografia electronică\n practic neschimbată. A fost popularizată\n în anii &apos;60 odată cu ieşirea colilor Letraset care\n conţineau pasaje Lorem Ipsum,\n iar mai recent, prin programele de publicare pentru\n calculator, ca Aldus PageMaker care includeau versiuni de Lorem Ipsum."
+                    android:textColor="#0077cc"
+                    android:textSize="28sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <TextView
+                    android:text="Lorem Ipsum este pur şi simplu\n o machetă pentru text\n a industriei tipografice.\n Lorem Ipsum a fost macheta\n standard a industriei \nîncă din secolul al \nXVI-lea, când un tipograf anonim\n a luat o planşetă de\n litere şi le-a amestecat pentru a crea o carte demonstrativă pentru literele respective.\n Nu doar că a supravieţuit timp de cinci secole,\n dar şi a facut saltul în tipografia electronică\n practic neschimbată. A fost popularizată\n în anii &apos;60 odată cu ieşirea colilor Letraset care\n conţineau pasaje Lorem Ipsum,\n iar mai recent, prin programele de publicare pentru\n calculator, ca Aldus PageMaker care includeau versiuni de Lorem Ipsum."
+                    android:textColor="#4488ff"
+                    android:textSize="28sp" />
+            </TableRow>
+        </TableLayout>
+
+        <View
+            android:id="@+id/extra"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</ScrollView>
