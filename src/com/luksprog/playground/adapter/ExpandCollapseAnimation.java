@@ -17,6 +17,13 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
 
+/**
+ * Class copied from
+ * http://stackoverflow.com/questions/9248930/android-animate-drop
+ * -down-up-view-proper  to have a easy animation.
+ * 
+ * 
+ */
 public class ExpandCollapseAnimation extends Animation {
 	private View mAnimatedView;
 	private int mEndHeight;
