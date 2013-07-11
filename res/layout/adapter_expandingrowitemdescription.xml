@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/normal_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:id="@+id/rowItem1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/list_selector_background"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/rowImage1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/rowText1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/rowItem2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/list_selector_background"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/rowImage2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/rowText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/rowItem3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/list_selector_background"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/rowImage3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/rowText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <view
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/normal_row"
+        class="com.luksprog.playground.adapter.ArrowView"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/extra"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/indicator"
+        android:background="#99cc00"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/description1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" Sed ut perspiciatis, unde omnis iste natus error sit 
+            voluptatem accusantium doloremque laudantium" />
+
+        <TextView
+            android:id="@+id/description2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" Sed ut perspiciatis, unde omnis iste natus error sit 
+            voluptatem accusantium doloremque laudantium" />
+
+        <TextView
+            android:id="@+id/description3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" Sed ut perspiciatis, unde omnis iste natus error sit 
+            voluptatem accusantium doloremque laudantium " />
+    </LinearLayout>
+
+</RelativeLayout>
