@@ -20,6 +20,11 @@
         </activity>
         <activity android:name="com.luksprog.playground.CategoryActivities" />
         <!-- NORMAL ACTIVITIES -->
+         <activity android:name=".view.ArcViewSample" >
+            <intent-filter>
+                <action android:name="com.luksprog.playground.VIEW" />
+            </intent-filter>
+        </activity>
         <activity android:name=".adapter.ExpandingRowItemDetails" >
             <intent-filter>
                 <action android:name="com.luksprog.playground.ADAPTER" />
