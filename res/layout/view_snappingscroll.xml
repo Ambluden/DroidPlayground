@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <view
+        android:id="@+id/searchButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        class="com.luksprog.playground.view.SnappingScroll$TryHorizontalScrollView"
+        android:background="@drawable/bck"
+        android:fadingEdge="horizontal"
+        android:padding="0dp"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="25dp" >
+
+            <View
+                android:id="@+id/leftMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:id="@+id/centerContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/leftMargin" >
+
+                <ImageButton
+                    android:id="@+id/searchButton1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher"
+                    android:onClick="engineClicked" />
+
+                <ImageButton
+                    android:id="@+id/searchButton2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher"
+                    android:onClick="engineClicked" />
+
+                <ImageButton
+                    android:id="@+id/searchButton3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher"
+                    android:onClick="engineClicked" />
+
+                <ImageButton
+                    android:id="@+id/searchButton4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher"
+                    android:onClick="engineClicked" />
+
+                <ImageButton
+                    android:id="@+id/searchButton5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher"
+                    android:onClick="engineClicked" />
+
+                <ImageButton
+                    android:id="@+id/searchButton6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher"
+                    android:onClick="engineClicked" />
+
+                <ImageButton
+                    android:id="@+id/searchButton7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_launcher"
+                    android:onClick="engineClicked" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/rightMargin"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_toRightOf="@id/centerContent"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </view>
+
+</RelativeLayout>
