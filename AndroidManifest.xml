@@ -20,6 +20,11 @@
         </activity>
         <activity android:name="com.luksprog.playground.CategoryActivities" />
         <!-- NORMAL ACTIVITIES -->
+        <activity android:name=".fragment.TestLikeImplem" >
+            <intent-filter>
+                <action android:name="com.luksprog.playground.FRAGMENT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".adapter.PreferenceLikeAdapter" >
             <intent-filter>
                 <action android:name="com.luksprog.playground.ADAPTER" />
