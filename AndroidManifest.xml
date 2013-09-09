@@ -20,6 +20,11 @@
         </activity>
         <activity android:name="com.luksprog.playground.CategoryActivities" />
         <!-- NORMAL ACTIVITIES -->
+        <activity android:name=".fragment.PaidFragmentOverlay" >
+            <intent-filter>
+                <action android:name="com.luksprog.playground.FRAGMENT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".view.ExpandableListViewExample" >
             <intent-filter>
                 <action android:name="com.luksprog.playground.VIEW" />
