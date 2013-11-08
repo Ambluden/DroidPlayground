@@ -18,14 +18,14 @@ import java.util.List;
 
 public class DataStore {
 
-	public static final String[] DATA_ARRAY = { "Galati", "Bucuresti", "Alba",
+	public static final String[] DATA_ARRAY = { "Bucuresti", "Alba",
 			"Cluj", "Braila", "Tulcea", "Constanta", "Calarasi", "Ialomita",
 			"Brasov", "Covasna", "Hunedoara", "Suceava", "Iasi", "Vaslui",
 			"Bacau", "Vrancea", "Bistrita" };
 
 	public static final List<String> DATA_LIST = Arrays.asList(DATA_ARRAY);
 
-	public static final String[] sCheeseStrings = { "Abbaye de Belloc",
+	public static final String[] CHEESE = { "Abbaye de Belloc",
 			"Abbaye du Mont des Cats", "Abertam", "Abondance", "Ackawi",
 			"Acorn", "Adelost", "Affidelice au Chablis", "Afuega'l Pitu",
 			"Airag", "Airedale", "Aisy Cendre", "Allgauer Emmentaler",
