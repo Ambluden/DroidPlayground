@@ -21,6 +21,13 @@
         <activity android:name="com.luksprog.playground.CategoryActivities" />
         <!-- NORMAL ACTIVITIES -->
         <activity
+            android:name=".adapter.MultipleRowTypeList"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+            <intent-filter>
+                <action android:name="com.luksprog.playground.ADAPTER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".fragment.MultiPageChange"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
             <intent-filter>
