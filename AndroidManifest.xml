@@ -20,6 +20,13 @@
         </activity>
         <activity android:name="com.luksprog.playground.CategoryActivities" />
         <!-- NORMAL ACTIVITIES -->
+        <activity
+            android:name=".adapter.DynamicLoadingExpandableList"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+            <intent-filter>
+                <action android:name="com.luksprog.playground.ADAPTER" />
+            </intent-filter>
+        </activity>
          <activity
             android:name=".app.DrawerPagerImpl"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
