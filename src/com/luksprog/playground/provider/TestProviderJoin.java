@@ -1,17 +1,16 @@
 package com.luksprog.playground.provider;
 
-import com.luksprog.playground.provider.ProviderWithJoinsContract.Clients;
-import com.luksprog.playground.provider.ProviderWithJoinsContract.Orders;
-
 import android.app.Activity;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.view.TextureView;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+
+import com.luksprog.playground.provider.ProviderWithJoinsContract.Clients;
+import com.luksprog.playground.provider.ProviderWithJoinsContract.Orders;
 
 /**
  * See

@@ -24,6 +24,11 @@ public class ProviderWithJoins extends ContentProvider {
 	private static final int JOINED_ORDER = 5;
 	private static final int JOINED_ORDERS = 6;
 	private Database mDatabase;
+	/**
+	 * The UriMatcher will match the Uri we get in the provider's methods to our
+	 * above defined codes, based on the codes we get we will query specific
+	 * tables and do extra operations like joins etc
+	 */
 	private static UriMatcher mMatcher;
 
 	static {
@@ -57,6 +62,9 @@ public class ProviderWithJoins extends ContentProvider {
 			break;
 		case CLIENT:
 			table = Clients.TABLE_NAME;
+			// this corresponds to a single entry in the clients table so we
+			// need to append this extra query to only select a single
+			// client(the same goes for the orders and joined orders Uris0
 			extraQuery = Clients.CLIENT_ID + "=" + uri.getLastPathSegment();
 			break;
 		case ORDERS:
@@ -67,12 +75,17 @@ public class ProviderWithJoins extends ContentProvider {
 			table = Orders.TABLE_NAME;
 			extraQuery = Orders.CLIENT_ID + "=" + uri.getLastPathSegment();
 			break;
+		// when we get one of the JOINED_ORDERS and JOINED_ORDER Uris it's a
+		// signal that
+		// we should do a join between the two tables we have
 		case JOINED_ORDERS:
 			table = Orders.TABLE_NAME + "," + Clients.TABLE_NAME;
 			extraQuery = Clients.TABLE_NAME + "." + Clients.CLIENT_ID + "="
 					+ Orders.TABLE_NAME + "." + Orders.CLIENT_ID;
 			break;
 		case JOINED_ORDER:
+			// instead of this we could implement a direct rawQuery against the
+			// database if we want.
 			table = Orders.TABLE_NAME + "," + Clients.TABLE_NAME;
 			extraQuery = Clients.TABLE_NAME + "." + Clients.CLIENT_ID + "="
 					+ Orders.TABLE_NAME + "." + Orders.CLIENT_ID + " AND "
