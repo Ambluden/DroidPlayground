@@ -29,7 +29,8 @@ public class CategoryActivities extends ListActivity {
 
 	private static final String[] CHALLENGE_INTENTS = {
 			"com.luksprog.playground.VIEW", "com.luksprog.playground.FRAGMENT",
-			"com.luksprog.playground.ADAPTER", "com.luksprog.playground.APP"};
+			"com.luksprog.playground.ADAPTER", "com.luksprog.playground.APP",
+			"com.luksprog.playground.PROVIDER" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

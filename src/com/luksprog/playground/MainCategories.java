@@ -27,13 +27,14 @@ import android.widget.SimpleAdapter;
 public class MainCategories extends ListActivity {
 
 	private static final String[] CATEGORIES = { "Views:", "Fragments",
-			"Adapters:", "App:" };
+			"Adapters:", "App:", "Provider:" };
 	private static final String[] CATEGORIES_DESCRIPTIONS = {
 			"View related code, custom components,"
 					+ " view creation/changes, special usess",
 			"Fragment use samples",
 			"Sample code related to building, changing and special usess of adapters",
-			"Sample code related to Activity related apis" };
+			"Sample code related to Activity related apis",
+			"Sample code related to android providers" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
