@@ -20,7 +20,21 @@
         </activity>
         <activity android:name="com.luksprog.playground.CategoryActivities" />
         <!-- NORMAL ACTIVITIES -->
-         <activity
+        <activity
+            android:name=".provider.TestProviderJoin"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+            <intent-filter>
+                <action android:name="com.luksprog.playground.PROVIDER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".provider.ProviderWithJoins"
+            android:authorities="com.luksprog.providerwithjoins"
+            android:exported="true" >
+        </provider>
+
+        <activity
             android:name=".fragment.ListPagerOffset"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
             <intent-filter>
@@ -34,7 +48,7 @@
                 <action android:name="com.luksprog.playground.ADAPTER" />
             </intent-filter>
         </activity>
-         <activity
+        <activity
             android:name=".app.DrawerPagerImpl"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
             <intent-filter>
