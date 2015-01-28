@@ -1,3 +1,5 @@
+#### The project is discontinued(but kept not to break links to it) in favor of a new Android project based on Android Studio.
+
 ## DroidPlayground
 
     Some Android related stuff, basically any snippet of code that doesn't make 
